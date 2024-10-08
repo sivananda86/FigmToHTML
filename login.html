@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login</title>
+<style>
+h1,
+form {
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h1>Login</h1>
+<form action="">
+<input type="text" placeholder="Username" id="username" />
+<input type="password" placeholder="Password" id="password" />
+<input type="button" value="Login" id="tombol" />
+</form>
+<script>
+const bnTombol = document.querySelector("#tombol");
+const txUsername = document.querySelector("#username");
+const txPassword = document.querySelector("#password");
+bnTombol.addEventListener("click", function () {
+// console.log(txUsername.value);
+// if (txUsername.value = "goeroeku") {
+console.log("Username anda benar");
+//}
+// if (txPassword.value == "ggwp") {
+// console.log("Password anda benar");
+//}
+if (txUsername.value == "goeroeku" && txPassword.value == "ggwp") {
+window.location = "index.html";
+} else
+alert("Username dan password anda salah");
+    });
+    </script>
+    </body>
+</html>
